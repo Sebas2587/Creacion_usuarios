@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+
+    {% load staticfiles %}
+    <title>{% block titulo %} {% endblock %}</title>
+
+</head>
+<body>
+
+			<header>
+
+
+				{% block encabezado %}
+
+
+				{% endblock %}
+				<nav>
+
+				</nav>
+			</header>
+
+
+
+                {% block contenido %}
+
+
+
+                {% endblock %}
+
+
+    <footer>
+        <p>proyecto ejemplo usuarios &copy;2016</p>
+    </footer>
+
+
+</body>
+</html>

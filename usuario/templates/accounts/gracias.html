@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block cabecera %}
+    <h1>Gracias por registrarte</h1>
+{% endblock %}
+
+
+{% block contenido %}
+
+    <h3>{{username}} gracias por registrarte!</h3><p>Aqui podras encontrar los productos que mas te gustan </p>
+
+
+        <form method="post" action="">{% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" name="enviar" value="enviar">
+
+        </form>
+
+
+
+
+{% endblock  %}
